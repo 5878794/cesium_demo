@@ -25,5 +25,13 @@ module.exports = defineConfig({
         ],
       }),
     ],
+    module:{
+      rules:[
+        {
+          test:/\.(gltf)$/,
+          loader:'url-loader'
+        }
+      ]
+    }
   },
 });
